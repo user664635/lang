@@ -24,4 +24,11 @@ loop:
 for(;;)
   for(;;)
     break loop;
-```   
+```
+
+- string
+```java
+char str[] = "test"; //error
+String str = "test";
+char c = str[0]; //error
+```
