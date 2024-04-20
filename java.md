@@ -5,7 +5,12 @@ while (1); //error
 for (;;); 
 ```
 
-- no unsigned variants, except char(u16)
+- no typedef
+```c
+typedef char u16; //error
+```
+
+- no unsigned variants, except char
 ```java
 byte b = 128; //error
 char c = -1; //error
@@ -31,4 +36,11 @@ for(;;)
 char str[] = "test"; //error
 String str = "test";
 char c = str[0]; //error
+```
+
+- for loop
+```java
+int a[] = {1,2,3};
+for (int i : a)
+    System.out.println(i);
 ```
